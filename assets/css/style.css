@@ -1,0 +1,30 @@
+
+.pushdown {
+	height: 50px;
+}
+
+.hangman-container {
+	height: 400px;
+}
+
+#hangman-graphic {
+	margin: 0 auto;
+	display: block;
+}
+
+.hangman-contents {
+	position: relative;
+	top: 10%;
+}
+
+#try-again-button {
+	display: none;
+}
+
+#instructions {
+	visibility: hidden;
+}
+
+#letter-row-1, #letter-row-2 {
+	visibility: hidden;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman!</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/theme-style.css">
+	
+</head>
+<body>
+
+<div class="container">
+	<div class="pushdown"></div>
+	<div class="jumbotron">
+		<h2 class="text-center">Hangman!</h2>
+			<div class="text-center">
+				<button class="btn-success btn-lg text-center" id="start-button">Press to begin</button>
+				<button class="btn-warning btn-lg text-center" id="try-again-button">Try Again</button>
+				</div>
+		<h4 class="text-center" id="instructions">Guess letters by pressing a key</h4>
+		
+		<div class="row text-center" id="letter-row-1">
+			<button class="btn btn-default unselected letter-choice" id="btn1">a</button>
+			<button class="btn btn-default unselected letter-choice" id="btn2">b</button>
+			<button class="btn btn-default unselected letter-choice" id="btn3">c</button>
+			<button class="btn btn-default unselected letter-choice" id="btn4">d</button>
+			<button class="btn btn-default unselected letter-choice" id="btn5">e</button>
+			<button class="btn btn-default unselected letter-choice" id="btn6">f</button>
+			<button class="btn btn-default unselected letter-choice" id="btn7">g</button>
+			<button class="btn btn-default unselected letter-choice" id="btn8">h</button>
+			<button class="btn btn-default unselected letter-choice" id="btn9">i</button>
+			<button class="btn btn-default unselected letter-choice" id="btn10">j</button>
+			<button class="btn btn-default unselected letter-choice" id="btn11">k</button>
+			<button class="btn btn-default unselected letter-choice" id="btn12">l</button>
+			<button class="btn btn-default unselected letter-choice" id="btn13">m</button>
+		</div>
+		<div class="row text-center" id="letter-row-2">
+			<button class="btn btn-default unselected letter-choice" id="btn1">n</button>
+			<button class="btn btn-default unselected letter-choice" id="btn2">o</button>
+			<button class="btn btn-default unselected letter-choice" id="btn3">p</button>
+			<button class="btn btn-default unselected letter-choice" id="btn4">q</button>
+			<button class="btn btn-default unselected letter-choice" id="btn5">r</button>
+			<button class="btn btn-default unselected letter-choice" id="btn6">s</button>
+			<button class="btn btn-default unselected letter-choice" id="btn7">t</button>
+			<button class="btn btn-default unselected letter-choice" id="btn8">u</button>
+			<button class="btn btn-default unselected letter-choice" id="btn9">v</button>
+			<button class="btn btn-default unselected letter-choice" id="btn10">w</button>
+			<button class="btn btn-default unselected letter-choice" id="btn11">x</button>
+			<button class="btn btn-default unselected letter-choice" id="btn12">y</button>
+			<button class="btn btn-default unselected letter-choice" id="btn13">z</button>
+		</div>
+
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		
+		<div class="col-xs-6 hangman-container">
+			
+			<img src="assets/images/hangman-graphic.png" alt="hangman-graphic" class="img img-circle" id="hangman-graphic">
+
+		</div>
+
+		<div class="col-xs-6 hangman-container">
+			
+			<div class="hangman-contents">
+
+				<div class="row">
+					<p class="wins text-center">Wins: <span id="win-count"></span></p>
+				</div>
+
+				<div class="row">
+					<p class="text-center">Current Word:</p>
+					<p class="text-center" id="current-word"></p>
+				</div>
+
+				<div class="row">
+					<p class="text-center">Guesses Remaining: <span id="guesses-remaining"></span></p>
+				</div>
+
+<!-- 				<div class="row">
+					<p class="text-center">Incorrect Guesses:</p>
+					<p class="text-center" id="letters-guessed"></p>
+				</div> -->
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="assets/javascript/hangman5.js"></script>
+
+</body>
+</html>
